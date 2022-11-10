@@ -1,9 +1,8 @@
-import "../styles/global.css";
+import { ICard } from "../../App";
 
-export function BackCard() {
+export function BackCard({ card }: { card: ICard }) {
   return (
     <div
-      className="card-container"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -12,7 +11,6 @@ export function BackCard() {
         width: "400px",
         height: "250px",
         borderRadius: "8px",
-        marginLeft: "30%",
       }}
     >
       <div
@@ -28,7 +26,7 @@ export function BackCard() {
           background: "#aaa",
           width: "80%",
           margin: "0 auto",
-          marginTop: "32px",
+          marginTop: "48px",
           color: "#222",
           padding: "8px 24px",
           textAlign: "end",
@@ -36,7 +34,10 @@ export function BackCard() {
           fontWeight: "bold",
         }}
       >
-        <span>000</span>
+        <span>mm/yy</span>
+        <span style={{ marginLeft: "32px" }}>
+          {card.cvv ? card.cvv : "000"}
+        </span>
       </div>
     </div>
   );

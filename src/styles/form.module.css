@@ -1,0 +1,73 @@
+.formContainer {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  padding-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inputGroup > label {
+  padding: 4px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: rgb(48, 48, 48);
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgb(34, 34, 34);
+}
+
+.verticalStack {
+  display: flex;
+  gap: 1rem;
+}
+
+.verticalStack > .inputGroup > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.formButton {
+  margin-top: 16px;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #372a72;
+  box-shadow: 0 0 5px #222;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: filter 0.4s ease-in-out;
+}
+
+.formButton:hover {
+  filter: brightness(1.2);
+}

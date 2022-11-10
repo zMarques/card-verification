@@ -1,10 +1,9 @@
-import chip from "../assets/chip.svg";
-import "../styles/global.css"
+import { ICard } from "../../App";
+import chip from "../../assets/chip.svg";
 
-export function FrontCard() {
+export function FrontCard({ card }: { card: ICard }) {
   return (
     <div
-    className="card-container"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -59,7 +58,7 @@ export function FrontCard() {
           <span>0000</span>
         </div>
       </div>
-      <h2>Nome no cartão</h2>
+      <h2>{card.name ? card.name : "Nome do cartão"}</h2>
     </div>
   );
 }
