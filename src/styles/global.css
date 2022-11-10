@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main {
+  background: #e8e4db;
+  color: #222;
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  z-index: -2;
+
+  padding: 32px;
+  display: flex;
+}
+
+.main::before {
+  content: "";
+  background: #372a72;
+  width: 30vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
