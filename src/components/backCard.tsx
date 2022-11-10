@@ -1,6 +1,9 @@
+import "../styles/global.css";
+
 export function BackCard() {
   return (
     <div
+      className="card-container"
       style={{
         display: "flex",
         flexDirection: "column",
